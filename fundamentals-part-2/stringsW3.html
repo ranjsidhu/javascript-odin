@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <script>
+        // https://www.w3schools.com/js/js_string_methods.asp
+
+        // STRING LENGTH
+        let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let lenght = txt.length;
+
+        // EXTRACTING STRING PARTS - 3 METHODS
+        // slice(start, end)
+        // substring(start, end)
+        // substr(start, end)
+
+        // SLICE --> extracts a part of a string and returns the extracted part in a new string
+        // if second parameter is omitted, the rest of the string will be sliced
+        let str = "Apple, Banana, Kiwi";
+        let part = str.slice(7, 13);
+        console.log(part);
+        let part2 = str.slice(-12, -6);
+        console.log(part2);
+
+        // SUBSTRING --> same as slice but cannot accept negative indexes
+        let str2 = "Apple, Banana, Kiwi";
+        let part3 = str2.substring(7, 13);
+        console.log(part3);
+
+        // SUBSTR --> similar to slice; second parameter defines the LENGTH of the extracted part
+        let str3 = "Apple, Banana, Kiwi";
+        let part4 = str3.substr(7, 6);
+        console.log(part4);
+        console.log(str3.substr(7));
+        console.log(str3.substr(-4));
+
+        // REPLACING STRING CONTENT
+        let text = "Please visit Microsoft!";
+        let newText = text.replace("Microsoft", "W3Schools");
+        console.log(newText);
+        let text2 = "Please visit Microsoft and Microsoft!";
+        let newText2 = text.replace("Microsoft", "W3Schools");
+        console.log(newText2);
+        // to replace without case sensitivity --> text.replace(/MICROSOFT/i, "W3Schools")
+        // to replace all matches --> text.replace(/Microsoft/g, "W3Schools")
+
+        // CONVERTING TO UPPER AND LOWER CASE
+        let text1 = "Hello World";
+        console.log(text1.toUpperCase());
+        console.log(text1.toLowerCase());
+
+        // STRING concat()
+        let text11 = "Hello";
+        let text22 = "World";
+        let text33 = text11.concat(" ", text22);
+        console.log(text33);
+
+        // STRING trim()
+        let text111 = "     Hello World     ";
+        let text222 = text111.trim();
+        console.log(text222);
+
+        // STRING padding
+        let textP = "5";
+        let padded = textP.padStart(4, 0);
+        console.log(padded);
+        console.log(textP.padEnd(4, 0));
+
+        // EXTRACTING STRING CHARACTERS
+        // charAt(position)
+        // charCodeAt(position)
+        // Property access [ ]
+
+        // charAt()
+        let textC = "HELLO WORLD";
+        console.log(textC.charAt(0));
+
+        // charCodeAt() --> returns unicode of a specified character
+        console.log(textC.charCodeAt(0));
+
+        // Property Access
+        console.log(textC[0]);
+
+        // CONVERTING A STRING TO AN ARRAY
+        // text.split(",") --> Split on commas
+        // text.split(" ") --> Split on spaces
+        // text.split("|") --> Split on pipe
+    </script>
+    
+</body>
+</html>
