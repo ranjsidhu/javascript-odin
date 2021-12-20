@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Numbers</title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <script>
+            // W3 Schools - w3schools.com/js/js_number.asp
+
+            // Decimals or no decimals
+            // let a = 3.14, b = 3;
+            // console.log(a);
+            // console.log(b);
+
+            // Scientific notation
+            // let c = 123e5, d = 123e-5; // 12300000, 0.00123
+            // console.log(c);
+            // console.log(d);
+
+            // Floating precision --> not always accurate
+            // console.log(0.1+0.2);
+            // console.log((0.2 * 10 + 0.1 * 10) / 10);
+
+            // Adding Numbers and Strings
+            // Number + Number = Number
+            // String + String = String concatenation
+            // String + Number = String concatenation
+            // JS converts strings to numbers for all numeric operations except + where it concatenates
+            // let e = 10, f = 20;
+            // console.log(e+f);
+            // let g = "10", h="20";
+            // console.log(g+h);
+            // let i = 10, j = "20";
+            // console.log(i+j);
+
+            // NaN - Not a Number
+            // console.log(100 / "Apple"); // NaN
+            // console.log(100 / "10"); // 10
+
+            // let x = 100 / "Apple";
+            // console.log(isNaN(x)); // true
+
+            // let a = NaN;
+            // let b = 5;
+            // console.log(a+b); // NaN
+
+            // let i = NaN;
+            // let j = "5";
+            // console.log(i+j); // NaN5
+
+            // INFINITY
+            // let myNumber = 2;
+            // // execute until infinity
+            // while (myNumber != Infinity) {
+            //     myNumber = myNumber * myNumber;
+            //     console.log(myNumber);
+            // }
+            // console.log(2 / 0); // Infinity
+
+            // Hexadecimal
+            // console.log(0xFF);
+            // let myNumber = 32;
+            // console.log(myNumber.toString(10));
+            // console.log(myNumber.toString(32));
+            // console.log(myNumber.toString(16));
+            // console.log(myNumber.toString(8));
+            // console.log(myNumber.toString(2));
+
+
+            // JavaScript Numbers as Objects
+            let x = 123;
+            let y = new Number(123); // Bad practice to create Number object as it slows down code and leads to unexpected outputs at times
+            console.log(typeof x); // number
+            console.log(typeof y); // object
+            console.log(x == y); // true
+            console.log(x === y); // false
+
+            let a = new Number(500);
+            let b = new Number(500);
+            console.log(a == b); // false
+            console.log(a === b); // false
+            // JavaScript objects cannot be compared
+
+        </script>
+    </body>
+</html>
