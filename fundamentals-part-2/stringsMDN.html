@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <script>
+        // https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Strings
+
+        // STRINGS
+        // creating a string
+        const string = 'The revolution will not be televised';
+        console.log(string);
+
+        // single quotes vs double quotes
+        const sgl = 'Single quotes';
+        const dbl = "Double quotes";
+        console.log(sgl);
+        console.log(dbl);
+
+        const sglDbl = 'Would you eat a "fish supper"?';
+        const dblSgl = "I'm feeling blue.";
+        console.log(sglDbl);
+        console.log(dblSgl);
+
+        // Escaping characters in a string --> \' \" etc
+        const bigmouth = 'I\'ve got no right to take my place...';
+        console.log(bigmouth);
+
+        // CONCATENATING STRINGS
+        const name = 'Chris';
+        const greeting = `Hello, ${name}`;
+        console.log(greeting); // Hello, Chris
+
+        const one = 'Hello, ';
+        const two = 'how are you?';
+        const joined = `${one}${two}`;
+        console.log(joined);
+
+        // NUMBERS VS STRINGS
+        const nameTwo = "Front ";
+        const number = 242;
+        console.log(`${nameTwo}${number}`);
+
+        // Number object
+        const myString = '123';
+        const myNum = Number(myString);
+        console.log(typeof myNum);
+
+        const myNum2 = 123;
+        const myString2 = myNum2.toString();
+        console.log(typeof myString2);
+
+        // INCLUDING EXPRESSIONS IN STRINGS
+        const song = 'Fight the Youth';
+        const score = 9;
+        const highestScore = 10;
+        const output = `I like the song ${song}. I gave it a score of ${score/highestScore * 100}%`;
+        console.log(output);
+
+        // MULTILINE STRINGS
+        const output2 = `I like the song.
+        I gave it a score of 90%.`;
+        console.log(output2);  // I like the song.
+                               // I gave it a score of 90%.
+
+        const output3 = 'I like the song.\nI gave it a score of 90%';
+        console.log(output3);
+    </script>
+
+
+    <button>Press me</button>
+    <script>
+        // Concatenation in context using button declared below
+        const button = document.querySelector('button');
+        function greet () {
+            const name = prompt('What is your name?');
+            alert(`Hello ${name}, nice to see you!`);
+        }
+        button.addEventListener('click', greet);
+    </script>
+
+
+</body>
+</html>
