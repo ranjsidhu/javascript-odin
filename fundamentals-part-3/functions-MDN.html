@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+        // Anonymous functions --> functions with no name as the it expects to take another function as a parameter
+        // function() {
+        //     alert('hello');
+        // }
+        
+        // Scenario where a textbox has been made on a HTML page
+        // textBox.addEventListener('keydown', function(event) {
+        //     console.log(`You pressed "${event.key}".`)
+        // });
+
+        // Arrow Function
+        // curly brackets are omitted if there is only one line between them or the function only takes one parameter
+        // textBox.addEventListener('keydown', (event) => console.log(`You pressed "${event.key}".`));
+
+        const originals = [1, 2, 3];
+        const doubled = originals.map(item => item * 2);
+        console.log(doubled);
+    </script>
+</body>
+</html>
